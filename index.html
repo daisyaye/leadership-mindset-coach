@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daisy Aye | Leadership Mindset Coach</title>
+    <style>
+        :root {
+            --green: #1f993a;
+            --lime: #edf9c8;
+            --line: rgba(237, 249, 200, 0.9);
+        }
+
+        * { box-sizing: border-box; }
+
+        html, body {
+            margin: 0;
+            width: 100%;
+            min-height: 100%;
+            background: var(--green);
+            color: var(--lime);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--green);
+        }
+
+        .landing-page {
+            position: relative;
+            width: 100%;
+            min-height: 100vh;
+            background: var(--green);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            padding: 28px 20px 58px;
+        }
+
+        .logo {
+            width: min(64vw, 540px);
+            max-width: 540px;
+            display: block;
+            margin: auto;
+            filter: none;
+        }
+
+        .socials {
+            position: static;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .social-link {
+            width: 46px;
+            height: 46px;
+            border: 2px solid var(--line);
+            border-radius: 10px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--lime);
+            background: rgba(255,255,255,0.02);
+            text-decoration: none;
+            transition: opacity 0.2s ease, transform 0.2s ease;
+        }
+
+        .social-link:hover {
+            opacity: 0.9;
+            transform: translateY(-1px);
+        }
+
+        .social-link svg {
+            width: 22px;
+            height: 22px;
+            fill: none;
+            stroke: currentColor;
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        .linkedin-box {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 800;
+            font-size: 1.5rem;
+            line-height: 1;
+            letter-spacing: -0.06em;
+        }
+
+        @media (max-width: 700px) {
+            .socials {
+                bottom: 18px;
+                gap: 10px;
+            }
+
+            .social-link {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="landing-page" aria-label="Daisy Aye landing page">
+        <img class="logo" src="Leadership%20Mindset%20Coach%20Logo.png" alt="Daisy Aye logo" />
+
+        <div class="socials" aria-label="Social links and contact">
+            <a class="social-link" href="mailto:hello@daisyaye.com" aria-label="Email">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+                    <path d="M4 7l8 6 8-6"></path>
+                </svg>
+            </a>
+
+            <a class="social-link" href="https://www.instagram.com/lmcdaye" target="_blank" rel="noopener" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+                    <circle cx="12" cy="12" r="4"></circle>
+                    <circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"></circle>
+                </svg>
+            </a>
+
+            <a class="social-link" href="https://www.linkedin.com/in/daisyaye" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <span class="linkedin-box">in</span>
+            </a>
+        </div>
+    </main>
+</body>
+</html>
